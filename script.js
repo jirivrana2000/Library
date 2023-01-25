@@ -67,3 +67,34 @@ function adNewBook() {
     console.log(read)
     addBookToLibrary(title, author, pages, read)
   }
+
+  /*this part is for case you don't want to have static form on site
+  if you call this function, it will show new form on site
+  for real use need some changes
+
+function formCall() {
+  const container = document.querySelector('#container');
+  let printForm = `<div class="form">
+                    <h2>New Book</h2>
+                   <form>
+                     <div>
+                       <label for="bookName">Name:</label>
+                       <input type="text" id="bookName" name="bookName" placeholder="Harry Potter" value="">
+                     </div>
+                     <div>
+                       <label for="authorName">Author:</label>
+                       <input type="text" id="authorName" name="authorName" placeholder="J.K. Rowling" value="">
+                     </div>
+                     <div>
+                       <label for="pages">Pages:</label>
+                       <input type="number" id="pages" name="pages" placeholder="223" value="">
+                     </div>
+                     <div>
+                       <label for="checkbox">Read:</label>
+                       <input class="checkbox" type="checkbox" id="checkbox" name="checkbox" value="" checked>
+                     </div>    
+                   </form>
+                   </div>`
+  container.insertAdjacentHTML('beforeend', printForm)
+}
+*/
