@@ -46,4 +46,122 @@ table {
 	border-spacing: 0;
 }
 /*My own css start here*/
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: darkturquoise;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
+.header {
+  box-sizing: border-box;
+  background-color: darkturquoise;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right{
+  box-sizing: border-box;
+  padding-right: 250px;
+}
+
+h1 {
+  font-size: 55px;
+  color: white;
+}
+
+.body {
+  display: flex;
+  box-sizing: border-box;
+  margin-bottom: auto;
+  height: auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+/*css for new book windows*/
+#bookContainer {
+	box-sizing: border-box;
+	border: 3px solid gray;
+	width: 230px;
+	background-color: #E0E0E0;
+	color: gray;
+	padding: 20px;
+	margin: 10px;
+	line-height: 3;
+}
+
+.closeButton {
+  box-sizing: border-box;
+  background-color: red;
+  color: white;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  bottom: 222px;
+  left: 170px;
+}
+/*css for new book windows*/
+/*css for form*/
+.form {
+  box-sizing: border-box;
+  border: 3px solid gray;
+  height: auto;
+  width: 250px;
+  height: 420px;
+  line-height: 1.8;
+  font-size: 20px;
+  padding: 10px;
+  background-color: #E0E0E0;
+  color: gray;
+  margin: 10px;
+}
+
+h2 {
+  font-size: 40px;
+  position: relative;
+  left: 20px;
+}
+
+label {
+  margin-right: auto;
+  margin-right: 10px;
+}
+
+input {
+  height: 30px;
+}
+
+input[type='text'],
+input[type='number']{
+  font-size: 20px;
+}
+
+.checkbox {
+  width: 25px;
+  position: relative;
+  top: 8px;
+}
+
+.newBookButton {
+  color: grey;
+  margin-top: 10px;
+  height: 40px;
+  width: 216px;
+}
+/*css for form*/
+
+.footer {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+}
