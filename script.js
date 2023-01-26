@@ -53,20 +53,22 @@ function adNewBook() {
     let authorName = document.getElementById('authorName').value;
     let pages = document.getElementById('pages').value;
     let checkbox = document.getElementById("checkbox");
-    checkbox.addEventListener( "change", () => {
+
       if ( checkbox.checked ) {
         read = "checked"
       } else {
         read = "unchecked"
       }
-    });
+      
     title = bookName
     author = authorName
     pages = pages
 
-    console.log(read)
     addBookToLibrary(title, author, pages, read)
   }
+
+
+
 
   /*this part is for case you don't want to have static form on site
   if you call this function, it will show new form on site
